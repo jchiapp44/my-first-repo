@@ -8,3 +8,9 @@ deleting a branch: git branch -d branchname
 git branch will provide the list of branches, verifying which branch was removed from lsit, thus deleted.
 I will run a tes of creating readme.txt, then a new branch and see what happens.
 
+RENAMING Branches:
+git branch -m newname -> the command if you are changing the name of the current branch you are in.
+git branch -m oldname newname -> the command you should use when changing a branch that you are NOT, i repeat NOT, currently in.
+
+When you are in one branch, create/delete/modify files and commit those changes to the repository while in that branch, you have updated everything in the repository to that branch, or at least saved the working version of that branch to the milestone.
+however, those changes are not reflected in other branches. If i am in master branch, and i create a file, add the file to the repo, modify the file, commit the changes, then the git status of that branch will be saved to the repository, however a different branch will not contain the same content.
