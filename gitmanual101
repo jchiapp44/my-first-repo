@@ -1,0 +1,38 @@
+Repository information and Git
+Git is a command line program that allows you to track versions of any code or plain text document that you create. 
+It tracks who made which particular changes, the time and date of the modifications, how they differ, where the changes were made, the directory/repository and the specific file. Helpful when wanting to revert or view a previous version of a project. Restores deleted files, can find new bugs in programs. GitHub is a website that provides remote git repositories. You can create your own public remote repositories for free through git hub. allows for easy syncing and collaboration on projects. 
+git config --global user.name "jchiapp44" will provide details of github account.
+Command: git config --global --list will provide the following output: user.name=jchiapp44
+user.email=julian.chiapperino@gmail.com
+this is the information associated witht he git account that is logged into the device, or at least the user accessing that particular directory of the device.
+General (Main) git commands:
+'git init' -> Creates the repository
+'git-add'  -> Add file contents to the index.
+'git-clone'  -> Clone a repository into a new directory.
+'git-commit' -> Record changes to the repository.
+'git-checkout' -> Switch branches or restore working tree files.
+'git-grep'  -> print lines matching a pattern      
+'git-clean'  -> Remove untracked files from the working tree.
+'git-diff'  -> Show changes between commits, commit and working tree, etc.
+'git rm --cached filename  -> will untrack the file, if you enter 'git status' after executing this command, it will say the file was untracked. 
+
+In order to use any git command, you must be in a directory that you want converted into a repository, then use git init, once that command has been executed, git will track the directory. You must add files to to tracking through add and commit
+once git is tracking a file, you can create a milestone in the repository, like a current version saved in the repository. 'git commit -m "update" ' is what you can execute in order to record changes to files. You can then use git status to verify the modifications, and it will say what happened. 
+git add -A can add all current versions of files in the repository in order to track all the changes. it will provide "new file:" or "modified" tags for respective files. 
+
+git reset --soft HEAD~ is a command we can use to undo the most recent commit command.
+
+'git log' provides a list of your git commit. 
+each commit has time date and commit message recorded.
+
+'git diff' command used to show differences between unstaged changes to your files compared to the last commit. 
+Work flow of a repository:    Working directory      ->     Staging area     ->      Repository
+a file in the directory gets placed in the staging area (index) through 'git add'
+a file in the staging area gets placed in the repository (as in that version at the time of executing 'git commit' gets updated into repo) through 'git commit'
+git diff command is used between the wroking direcotry and staging area. 
+git diff --staged is used for comparing staging rea file to repository version post git commit command.
+git diff HEAD is used to show the difference between the working directory version of the file and the file form the last commit, most recently saved file in repository, or most recently bookmarked version. Think of commits as bookmarks.
+
+Files that you do not want to track would be pdfs, images, confidential/hidden files. .gitingore file can show all the files/content you do not want tracked and that should not be tracked. 
+say you added a jpg file to the repository via touch *.jpg and then git status. 
+entering 'echo "*.jpg" > .gitignore' and then git status will essentially let the repo track .gitignore but it removes jpg file from the repository. 
