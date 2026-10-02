@@ -1,0 +1,5 @@
+commit f081ce79687db4dc3cbd45cd5d813ffa567d84c7
+Author: jchiapp44 <julian.chiapperino@gmail.com>
+Date:   Fri Oct 2 23:44:17 2026 +0200
+
+    ignore particular content

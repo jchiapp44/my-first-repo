@@ -36,3 +36,9 @@ git diff HEAD is used to show the difference between the working directory versi
 Files that you do not want to track would be pdfs, images, confidential/hidden files. .gitingore file can show all the files/content you do not want tracked and that should not be tracked. 
 say you added a jpg file to the repository via touch *.jpg and then git status. 
 entering 'echo "*.jpg" > .gitignore' and then git status will essentially let the repo track .gitignore but it removes jpg file from the repository. 
+
+#DELETING REPOSITORIES:
+STEP1) revert the repository back into a directory: rm -rf .git  -> remove (recursively and forcefully) the git data from the current directory
+STEP2) make sure all other files have been accounted for, deleted, as you cannot delete a directory that has content within it unless you execute a recurssive removal.
+STEP3) rmdir command to erase the folder, if you want all the content eradicated/
+

@@ -1,0 +1,10 @@
+#BRANCHING:
+one of the most powerful features that git offers, allows for collabroating where people work on different branches and then merge them all together
+adding a new branch: 'git branch nameofnewbranch'
+re-entering git branch will confirm if the branch was created, there is a default branch called the master branch. the * next to a branch indicates the current branch the user is working in.
+'git checkout bameofbranch' is the command you use if you want to switch to a different branch, entering git branch will verify the success depending on where the * is.
+'git status' will also reveal the branch that we are in. git checkout master always reverts working branch to master.
+deleting a branch: git branch -d branchname
+git branch will provide the list of branches, verifying which branch was removed from lsit, thus deleted.
+I will run a tes of creating readme.txt, then a new branch and see what happens.
+
