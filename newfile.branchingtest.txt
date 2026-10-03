@@ -1,0 +1,8 @@
+TESTING branch commands
+Created this file, while in newbranch1, then i will add the file to staging area, i will commit the changes, and then i will try to merge the changes to the master branch. 
+Below was the prompt from coursera: 
+Start a new branch.
+
+Switch to that branch and add commits to it. Switch to an older branch and then merge the new branch into your current branch.
+
+Purposefully create and resolve a merge conflict.
