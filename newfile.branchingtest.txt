@@ -6,3 +6,5 @@ Start a new branch.
 Switch to that branch and add commits to it. Switch to an older branch and then merge the new branch into your current branch.
 
 Purposefully create and resolve a merge conflict.
+Different last line, the master branch has a different ending compared to the newbranch1 (current branch) version of this file. i will add the changes of this file, commit them, and then try to merge the two branches.
+
