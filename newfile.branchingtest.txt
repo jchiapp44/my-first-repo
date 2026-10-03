@@ -6,6 +6,16 @@ Start a new branch.
 Switch to that branch and add commits to it. Switch to an older branch and then merge the new branch into your current branch.
 
 Purposefully create and resolve a merge conflict.
+<<<<<<< HEAD
+Different last line, the master branch has a different ending compared to the newbranch1 (current branch) version of this file. i will add the changes of this file, commit them, and then$
+=======
 
-Now i am currently in the master branch, merge was successful. This time i will add and commit this file to the master branch with this file having this current line only in the master branch, i will add a different line to the file in newbranch1.
+Now i am currently in the master branch, merge was successful. This time i will add and commit this file to the master branch with this file having this current line only in the master b$
+>>>>>>> master
+julianchiapperino@Julians-MacBook-Air Module4 % git merge master
+Auto-merging newfile.branchingtest.txt
+CONFLICT (content): Merge conflict in newfile.branchingtest.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Above you can find the Error message that was displayed for me when the merge failed.
+$anch so that the two versions of the file are identical.
 
