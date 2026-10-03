@@ -14,3 +14,46 @@ git branch -m oldname newname -> the command you should use when changing a bran
 
 When you are in one branch, create/delete/modify files and commit those changes to the repository while in that branch, you have updated everything in the repository to that branch, or at least saved the working version of that branch to the milestone.
 however, those changes are not reflected in other branches. If i am in master branch, and i create a file, add the file to the repo, modify the file, commit the changes, then the git status of that branch will be saved to the repository, however a different branch will not contain the same content.
+Example of commands used and the output displayed on command line terminal:
+	julianchiapperino@Julians-MacBook-Air Module4 % nano gitbranching.txt
+	julianchiapperino@Julians-MacBook-Air Module4 % git status
+	On branch master
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git restore <file>..." to discard changes in working directory)
+	  (commit or discard the untracked or modified content in submodules)
+		modified:   gitbranching.txt
+		modified:   my-first-repository (modified content)
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+	julianchiapperino@Julians-MacBook-Air Module4 % git commit -m "Continued additions to the git branching txt file"     
+	On branch master
+	Changes not staged for commit:
+  	(use "git add <file>..." to update what will be committed)
+  	(use "git restore <file>..." to discard changes in working directory)
+  	(commit or discard the untracked or modified content in submodules)
+		modified:   gitbranching.txt
+		modified:   my-first-repository (modified content)
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+	julianchiapperino@Julians-MacBook-Air Module4 % git add -A
+	julianchiapperino@Julians-MacBook-Air Module4 % git status
+	On branch master
+	Changes to be committed:
+  	(use "git restore --staged <file>..." to unstage)
+		modified:   gitbranching.txt
+
+	Changes not staged for commit:	
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git restore <file>..." to discard changes in working directory)
+	  (commit or discard the untracked or modified content in submodules)
+		modified:   my-first-repository (modified content)
+
+	julianchiapperino@Julians-MacBook-Air Module4 % git commit -m "try again changes"
+	[master ad11122] try again changes
+	 1 file changed, 6 insertions(+)
+
+ORDER OF COMMANDS: 
+nano file, git status (showed changes had not been moved to staging area), git commit (no changes added because nothing had been moved to staging area),
+git add -A (moved changes to staging area), git status (showed the changes were made, not yet committed), 
+git commit -m "message" (recorded the changes made and added to staging area to the actual milestone checkpoint made via the commit command)
