@@ -6,3 +6,6 @@ Start a new branch.
 Switch to that branch and add commits to it. Switch to an older branch and then merge the new branch into your current branch.
 
 Purposefully create and resolve a merge conflict.
+
+Now i am currently in the master branch, merge was successful. This time i will add and commit this file to the master branch with this file having this current line only in the master branch, i will add a different line to the file in newbranch1.
+
