@@ -12,3 +12,12 @@ I am editing this file through the git hub website, remote manner, although i am
 Once I have finished making changes to the file, i will add them to the staging area, commit them, and then try to see if the changes appear on local branches, versions of the repository. 
 i suspect i will have to merge the remote repo with the local repo but i am unsure about the process for doing that.
 
+**CHANGES THROUGH LOCAL REPO**
+THIS PORTION OF THE FILE IS BEING MODIFIED THROUGH MY LOCAL REPOSITORY. 
+I was able to to merge my remote repository with the local repository by executing 'git pull'
+The 'git pull' command accomplishes two things in one: 'git fetch' and 'git merge'. the fetch downloads the new commits (from the remote repository via git hub) and the merge will insert those changes (join/merge) into the current local branch. 
+POTENTIAL COMPLICATIONS TO 'GIT PULL':
+changing the file locally, and not committing those changes to the same file. also, new local repository commits that git hub does not have, the commits have been unaccounted for because there was not a recent merging of the two repositories (local and remote).
+proper vernacular: 'git push' is how local changes/commits reach the git hub remote repo, so although its essentially the same end result of merging local repositories, its considered pulling and not merging. 
+'git push' -> updating remote repository with the changes/commits made from the local repo. 
+'git pull' -> updating local repository with the changes/commits made from the remote repo via git hub website.
