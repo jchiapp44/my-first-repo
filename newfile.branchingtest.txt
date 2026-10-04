@@ -31,3 +31,15 @@ $anch so that the two versions of the file are identical.
 To resolve the conflict i could unmerge, instead i will copy and paste this entire block, directly under the line starting with "purposefully", in the same file but in the master branch so that the two versions of the file are identical.
 >>>>>>> newbranch1
 
+
+Ultimately, i had success iwth git branching and resolving coflicts, with the following ultimately being printed: 
+julianchiapperino@Julians-MacBook-Air Module4 % git branch
+  master
+* newbranch1
+  oldbranch
+julianchiapperino@Julians-MacBook-Air Module4 % git checkout master
+M	my-first-repository
+Switched to branch 'master'
+julianchiapperino@Julians-MacBook-Air Module4 % git merge newbranch1
+Already up to date.
+series of commands that switched branch, and attempted to merge after having already corrected errors leading to conflicts.
